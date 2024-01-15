@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;400;700&family=Playfair+Display:ital,wght@1,600;1,900&family=Roboto:wght@100&family=Rubik+Doodle+Shadow&family=Teko:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Kalnia, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(pink, rgba(240, 88, 88, 0.897));
+    border-radius: 20px;
+}
+
+.navigation {
+    overflow: hidden;
+    display: flex;
+    background-color: rgb(251, 80, 116);
+    font-family: Arial;
+}
+
+.navigation a {
+    float: left;
+    font-size: 18px;
+    color: #fcbcc4;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fcbcc4;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navigation a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(251, 80, 116);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(251, 80, 116);
+    min-width: 160px;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #fcbcc4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(251, 80, 116);
+    color: #fcbcc4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navigation .logoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.navigation .logoname h1 {
+    color: #fcbcc4;
+    position: relative;
+    font-size: 30px;
+}
+
+.navigation .icon {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    float: right;
+    width: 20%;
+    justify-content: center;
+}
+
+.navigation .icon i {
+    display: flex;
+    justify-content: space-between;
+    color: #fcbcc4;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcc9ce;
+    position: relative;
+    width: 100%;
+    height: 135vh;
+}
+
+.container1 .head {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    bottom: 85%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 35px 30px;
+    font-size: 30px;
+    color: rgb(251, 80, 116);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #ec7684;
+    font-style: italic;
+}
+
+.block .card {
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 530px;
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #fcbcc4;
+    box-shadow: 10px 10px 8px rosybrown;
+}
+
+.block .card .head1 {
+    background-color: antiquewhite;
+    color: #ec7684;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block .card .head1 .product {
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    margin-right: 10px;
+}
+
+.block .card .shoping {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(250, 235, 215);
+    align-items: center;
+    text-align: left;
+}
+
+.block .card .shoping .quantity input {
+    width: 30px;
+}
+
+.block .card .shoping .img {
+    margin-left: -70px;
+    color: crimson;
+    text-align: left;
+    margin-top: 2px;
+}
+
+.block .card .shoping .img p:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+.block .card .shoping .price {
+    margin-left: -100px;
+    color: crimson;
+    text-align: left;
+}
+
+.block .card .shoping .quantity {
+    margin-left: -70px;
+    color: crimson;
+    text-align: left;
+}
+
+.block .card .shoping .remove {
+    margin-left: -70px;
+    color: crimson;
+    text-align: left;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    background-color: #fcc9ce;
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
+.box {
+    background-color: rgb(250, 235, 215);
+    width: 80%;
+    line-height: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px rosybrown;
+}
+
+.box .heading {
+    font-size: 35px;
+    padding: 10px 20px;
+    color: crimson;
+    background-color: rgb(260, 270, 210);
+    border-radius: 50px;
+    display: inline-block;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.orderblock .order {
+    font-size: 30px;
+    padding: 10px 20px;
+    color: crimson;
+    background-color: rgb(260, 270, 210);
+    border-radius: 50px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.orderblock span {
+    margin-left: 60px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.orderblock .subtotal {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderblock .subtotal hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.orderblock .subtotal h4 {
+    float: left;
+    font-size: 22px;
+    font-style: italic;
+    margin-left: 30px;
+    color: rgb(251, 80, 116);
+}
+
+.orderblock .subtotal h3 {
+    float: right;
+    position: absolute;
+    margin-left: 62%;
+    font-size: 22px;
+    color: darksalmon;
+    text-shadow: 5px 5px 7px #fcbcc4;
+}
+
+.orderblock .subtotal #bigtotal {
+    font-size: 30px;
+}
+
+.orderblock button {
+    height: 45px;
+    color: rgb(260, 270, 210);
+    background-color: crimson;
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.orderblock button:hover {
+    background-color: darkred;
+}
+
+.subheading {
+    font-size: 20px;
+    margin-left: 8%;
+    padding: 5px 7px;
+    color: burlywood;
+    text-shadow: 2px 2px 8px coral;
+}
+
+.container2 .input input {
+    width: 70%;
+    font-size: 22px;
+    height: 40px;
+    padding: 5px 10px;
+    color: crimson;
+    background-color: rgb(255, 228, 190);
+    border-radius: 30px;
+    margin-left: 60px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(251, 80, 116);
+}
+
+.container2 .input input:hover {
+    cursor: pointer;
+    box-shadow: inset -10px -10px 10px rgb(260, 270, 210);
+}
+
+.container2 .input button {
+    height: 45px;
+    color: rgb(260, 270, 210);
+    background-color: crimson;
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.container2 .input button:hover {
+    background-color: darkred;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". .";
+    border-top: 1px solid #ec7684;
+    border-bottom: 1px solid #ec7684;
+    background-color: #fcbcc4;
+}
+
+.container3 .block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 40px 20px;
+    line-height: 50px;
+    color: rgb(251, 80, 116);
+}
+
+.container3 .block1 a {
+    color: darkorchid;
+    text-decoration: none;
+}
+
+.container3 .block2 a {
+    color: darkorchid;
+    text-decoration: none;
+}
+
+.container3 .block2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 40px 20px;
+    line-height: 50px;
+    border-left: 1px solid rgb(251, 80, 116);
+}
+
+footer {
+    width: 100%;
+    height: 28vh;
+    background-color: #fcbcc4;
+}
+
+footer .left {
+    font-size: 25px;
+    padding: 50px 20px;
+    margin-left: 50px;
+    color: darkorchid;
+}
+
+footer .left .fa-brands {
+    color: darkorchid;
+    padding: 10px;
+}
+
+footer .left .leftcopyrig {
+    margin-left: 70px;
+    font-size: 20px;
+}

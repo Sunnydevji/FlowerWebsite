@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400;1,500;1,900&family=Roboto:wght@100&family=Rubik+Doodle+Shadow&family=Teko:wght@300&display=swap');
+* {
+    font-family: Playfair Display, sans-serif;
+}
+
+body {
+    position: sticky;
+    min-height: 100vh;
+    background: url(backgound.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(pink, rgba(240, 88, 88, 0.897));
+    border-radius: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    animation: floatup 1s forwards;
+}
+
+.firstblock {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 5px 20px;
+    width: 500px;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.firstblock h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: maroon;
+    text-shadow: 2px 2px 6px mistyrose;
+    font-weight: 700;
+}
+
+.firstblock span {
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.secondblock h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: maroon;
+    text-shadow: 2px 2px 6px mistyrose;
+    font-weight: 700;
+}
+
+.secondblock span {
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.firstblock input {
+    height: 30px;
+    border: none;
+    background-color: cornsilk;
+    color: maroon;
+    border: none;
+    box-shadow: 5px 5px 20px #ec47a2ad, inset -5px -5px 15px #d38388;
+    transition: all 0.2s;
+}
+
+.firstblock textarea {
+    border: none;
+    background-color: cornsilk;
+    color: maroon;
+    border: none;
+    box-shadow: 5px 5px 20px #ec47a2ad, inset -5px -5px 15px #d38388;
+    transition: all 0.2s;
+}
+
+.firstblock textarea:hover {
+    box-shadow: 5px 5px 10px grey, inset -5px -5px 15px #d3886d;
+    border: none;
+}
+
+.firstblock button {
+    width: 20%;
+    height: 40px;
+    background-color: #d3886d;
+    color: brown;
+    border-radius: 10px;
+    border: 1px solid maroon;
+    box-shadow: 5px 5px 20px #ec47a2ad, inset -5px -5px 15px #d38388;
+    transition: all 0.2s;
+    font-size: 15px;
+}
+
+.firstblock button:hover {
+    box-shadow: 5px 5px 10px grey, inset -5px -5px 15px #d3886d;
+    background-color: brown;
+    color: #d38388;
+}
+
+.firstblock input:hover {
+    box-shadow: 5px 5px 10px grey, inset -5px -5px 15px #d3886d;
+    border: none;
+}
+
+.secondblock {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 500px;
+    padding: 7px 20px;
+    margin-top: 5%;
+    float: right;
+    text-align: left;
+}
+
+.firstblock .margin {
+    margin-bottom: 20px;
+}
+
+.secondblock .margin {
+    margin-bottom: 20px;
+}
+
+.thirdblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+.thirdblock .phone {
+    height: 150px;
+    width: 300px;
+    text-align: left;
+    background-color: #ca565e;
+    opacity: 0.8;
+    box-shadow: 2px 2px 6px moccasin inset, -2px -2px 6px moccasin;
+}
+
+.thirdblock .phone .fa-solid {
+    margin: 7px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    color: bisque;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 5px 4px 6px #d3886d;
+    padding: 10px 20px;
+}
+
+.thirdblock .phone p {
+    margin-left: 25px;
+    font-size: 18px;
+    color: burlywood;
+    font-weight: 700;
+    text-shadow: 0px 0px 2px moccasin;
+}
+
+@keyframes floatup {
+    from {
+        opacity: .0;
+        transform: translateY(14px);
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
